@@ -1,4 +1,4 @@
 # My Portfolio Website
 
 
-## https://tripathi-abhishek.github.io/Portfolio/
+## https://tripathi-abhishek.github.io/
