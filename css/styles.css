@@ -39,7 +39,29 @@ p {
 a {
   color: #11999E;
   text-decoration: none;
+  transition: All;
 }
+
+ul {
+  list-style-type: none;
+  margin: 0.5px;
+  padding: 2.5em;
+  overflow: hidden;
+  background-color: #e0ebe8;
+  position: relative;
+}
+
+li {
+  float: right;
+}
+
+li a {
+  display: inline-block;
+  margin: 0 0 0 1.5em;
+  font-weight: 400;
+  font-size: 110%;
+}
+
 
 .initial {
   color: #45b29a;
@@ -114,8 +136,8 @@ a {
 
 .top-cloud {
   position: absolute;
-  right: 300px;
-  top: 130px;
+  right: 18.75%;  /*18.75% = 300px*/
+  top: 8.125%;  /*8.125% = 300px*/
 }
 
 .bottom-cloud {
