@@ -1,33 +1,29 @@
 body {
   margin: 0;
   text-align: center;
-  font-family: cursive,brandon-grotesque,HelveticaNeue-Light,"Helvetica Neue Light","Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;
+  font-family: 'Merriweather', 'Montserrat', 'Sacramento', cursive, sans-serif;
   color: #40514E;
 }
 
 h1 {
-
-  font-size: 5.625rem;    /*100% = 16px = 1em, here "rem is root-em hwich remains same when font size is messed with."   :Dynamic CSS sizing*/
-  margin: 50px auto 0 auto;
-  font-family: 'Sacramento', cursive;
+  font-size: 5.625rem;
+  margin: 50px auto 0;
   color: #45b29a;
 }
 
 h2 {
-  font-family: 'Montserrat', sans-serif;
   font-size: 2.5rem;
   font-weight: normal;
   color: #45b29a;
   padding-bottom: 10px;
 }
+
 h3 {
-  font-family: 'Montserrat', sans-serif;
   color: #11999E;
 }
 
 hr {
   border: dotted #EAF6F6 6px;
-  border-bottom: none;
   width: 5%;
   margin: 100px auto;
 }
@@ -39,29 +35,26 @@ p {
 a {
   color: #11999E;
   text-decoration: none;
-  transition: All;
+  transition: all 0.3s ease;
 }
 
-ul {
+a:hover {
+  color: #45b29a;
+}
+
+nav ul {
   list-style-type: none;
-  margin: 0.5px;
+  margin: 0;
   padding: 2.5em;
-  overflow: hidden;
   background-color: #e0ebe8;
-  position: relative;
 }
 
-li {
-  float: right;
-}
-
-li a {
+nav li {
   display: inline-block;
-  margin: 0 0 0 1.5em;
+  margin-left: 1.5em;
   font-weight: 400;
   font-size: 110%;
 }
-
 
 .initial {
   color: #45b29a;
@@ -70,7 +63,6 @@ li a {
 .intro {
   width: 30%;
   margin: auto;
-  line-height: 2;
 }
 
 .contact-message {
@@ -80,23 +72,19 @@ li a {
 
 .top-container {
   background-color: #e0ebe8;
-  position: relative;
   padding-top: 100px;
 }
 
- .middle-container {
-   margin: 100px 0;
+.middle-container {
+  margin: 100px 0;
 }
 
- .bottom-container {
-  width: auto;
-  height: auto;
+.bottom-container {
   background-color: #c5ded7;
   padding: 50px 0 20px;
 }
 
 .copyright {
-  font-family: serif;
   font-size: 0.75rem;
   color: #45b29a;
   padding: 20px 0;
@@ -104,79 +92,57 @@ li a {
 
 .skill-row {
   width: 50%;
-  margin: 100px auto 100px auto;
+  margin: 100px auto;
   text-align: left;
 }
 
-.me {
+img {
   border-radius: 50%;
-  height: 10%;
-  width: 10%;
-  vertical-align: middle;
   border: 0;
 }
-.me2 {
-  border-radius: 50%;
+
+.me {
+  height: 10%;
+  width: 10%;
+}
+
+.me2, .me3 {
   height: 25%;
   width: 25%;
-  vertical-align: middle;
-  border: 0;
+}
+
+.me2 {
   float: right;
   margin-left: 50px;
 }
+
 .me3 {
-  border-radius: 50%;
-  height: 25%;
-  width: 25%;
-  vertical-align: middle;
-  border: 0;
   float: left;
   margin-right: 50px;
 }
 
-.top-cloud {
+.top-cloud, .bottom-cloud {
   position: absolute;
-  right: 18.75%;  /*18.75% = 300px*/
-  top: 8.125%;  /*8.125% = 300px*/
+}
+
+.top-cloud {
+  right: 18.75%;
+  top: 8.125%;
 }
 
 .bottom-cloud {
-  position: absolute;
   bottom: 300px;
   left: 300px;
-}
-.skills {
-  font-size: 100%;
-
-}
-.contact-me {
-  text-align: center;
-  width: 100%;
 }
 
 .btn {
   background: #34d95a;
-  background-image: -webkit-linear-gradient(top, #34d95a, #34d95a);
-  background-image: -moz-linear-gradient(top, #34d95a, #34d95a);
-  background-image: -ms-linear-gradient(top, #34d95a, #34d95a);
-  background-image: -o-linear-gradient(top, #34d95a, #34d95a);
-  background-image: linear-gradient(to bottom, #34d95a, #34d95a);
-  -webkit-border-radius: 11;
-  -moz-border-radius: 11;
   border-radius: 11px;
-  font-family: 'Montserrat', sans-serif;
-  color: #ffffff;
+  color: #fff;
   font-size: 20px;
-  padding: 10px 20px 10px 20px;
-  text-decoration: none;
+  padding: 10px 20px;
 }
 
 .btn:hover {
   background: #24ff50;
-  background-image: -webkit-linear-gradient(top, #24ff50, #19ff47);
-  background-image: -moz-linear-gradient(top, #24ff50, #19ff47);
-  background-image: -ms-linear-gradient(top, #24ff50, #19ff47);
-  background-image: -o-linear-gradient(top, #24ff50, #19ff47);
-  background-image: linear-gradient(to bottom, #24ff50, #19ff47);
-  text-decoration: none;
 }
